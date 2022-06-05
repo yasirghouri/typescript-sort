@@ -1,9 +1,8 @@
-class Sorter {
-  constructor(public collection: number[]) {}
+import { NumbersCollection } from "./NumbersCollection";
+import { Sorter } from "./Sorter";
 
-  sort(): void {}
-}
+const numbersCollection = new NumbersCollection([5, 2, 8, 1, -9, 100]);
+const sorter = new Sorter(numbersCollection);
+sorter.sort();
 
-const sorter = new Sorter([1, 2, 3, 4]);
-
-console.log(sorter);
+console.log(numbersCollection.data);
